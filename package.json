@@ -5,7 +5,7 @@
   "main": "./api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/index.js"
+    "start": "nodemon api/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "express": "^4.18.2",
     "sequelize": "^5.21.7",
     "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
