@@ -12,7 +12,7 @@ app.get('/teste', (req, res) => {
 })
 
 app.listen(port, () => { 
-  console.log(`servidor rodando em: http://localhost:${port}/produtos `)
+  console.log(`servidor rodando em: http://localhost:${port}/produtos `);
 })
 
-module.exports = app
+module.exports = app;
