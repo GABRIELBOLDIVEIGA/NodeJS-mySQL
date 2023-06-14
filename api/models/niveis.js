@@ -8,6 +8,3 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Niveis;
 };
-
-// criar tabela niveis
-// npx sequelize-cli model:create --name Niveis --attributes descr_nivel:string

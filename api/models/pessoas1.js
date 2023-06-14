@@ -7,7 +7,11 @@ module.exports = (sequelize, DataTypes) => {
     role: DataTypes.STRING
   }, {});
   Pessoas.associate = function(models) {
-    // associations can be defined here
+    Pessoas.hasMany(models.Turmas, { foreignKey: 'docente_id'})
+    Pessoas.hasMany(models.Matriculas, { foreignKey: 'estudante_id'})
   };
   return Pessoas;
 };
+
+// cria tabela Pessoas
+// npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string

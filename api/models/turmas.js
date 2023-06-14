@@ -8,6 +8,3 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Turmas;
 };
-
-// cria tabela turmas 
-// npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly
