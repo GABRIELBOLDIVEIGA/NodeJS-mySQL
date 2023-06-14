@@ -11,3 +11,6 @@ module.exports = (sequelize, DataTypes) => {
   };
   return Pessoas;
 };
+
+// cria tabela Pessoas
+// npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
