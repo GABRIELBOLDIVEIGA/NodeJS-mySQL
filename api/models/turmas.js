@@ -2,8 +2,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Turmas = sequelize.define('Turmas', {
     data_inicio: DataTypes.DATEONLY,
-    nivel_id: DataTypes.INTERGER,
-    docente_id: DataTypes.INTERGER
   }, {});
   Turmas.associate = function(models) {
     Turmas.hasMany(models.Matriculas, { foreignKey: 'turma_id' })
